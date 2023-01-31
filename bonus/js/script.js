@@ -10,8 +10,9 @@ createApp ({
         }
     },
     methods: {
-        playGame () {
-            
+
+        delayedStart() {
+
             for (let index = 1; index <= 10; index++) {
 
                 axios
@@ -23,9 +24,10 @@ createApp ({
                 
                 });
             }
-        }
+        } 
+       
     },
     mounted() {
-
+        
     }
 }).mount('#app');
