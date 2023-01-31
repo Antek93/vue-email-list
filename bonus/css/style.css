@@ -15,7 +15,6 @@
     background-color: #b9b9b9;
     text-align: center;
     border-radius: 27px;
-    padding-bottom: 10px;
 }
 
 
@@ -29,3 +28,7 @@
 .container ol {
     list-style: none;
 }
+
+.liStyle {
+    padding: 10px;
+} 
