@@ -6,6 +6,7 @@ createApp ({
     data () {
         return {
             randomMail: [],
+            loadingComplete: false,
 
         }
     },
@@ -20,7 +21,13 @@ createApp ({
        
                    console.log('Random email', resp.data.response)
                    this.randomMail.push(resp.data.response)
-                
+
+                   if (this.randomMail.length == 10) {
+                    this.loadingComplete = true;
+                   } else {
+                    console.log ('Array non completo')
+                   }
+
                 });
             }
         }

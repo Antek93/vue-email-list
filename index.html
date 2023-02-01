@@ -15,7 +15,7 @@
             </button>
         </div>
         <div>
-            <ol>
+            <ol v-if="loadingComplete == true">
                 <li class="liStyle" v-for="(element, index) in randomMail">
                     {{ (index + 1) + '.)' + ' ' + element }}
                 </li>
